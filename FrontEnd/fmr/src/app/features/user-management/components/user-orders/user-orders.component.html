@@ -1,0 +1,18 @@
+<div>
+  <label for="user-select">Select a User:</label>
+  <select id="user-select" (change)="onSelectUser($event)">
+    <option value="" disabled selected>Select a user</option>
+    <option *ngFor="let user of users$ | async" [value]="user.id">
+      {{ user.name }}
+    </option>
+  </select>
+</div>
+
+<div *ngIf="selectedUser$ | async as user">
+  <h2>{{ user.name }}</h2>
+  <p>Total Orders: {{ totalOrders$ | async }}</p>
+</div>
+
+<div *ngIf="!(selectedUser$ | async)">
+  <p>No user selected</p>
+</div>
