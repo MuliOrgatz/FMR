@@ -3,7 +3,7 @@
 ---
 
 ## **Architecture**
-![image](https://github.com/user-attachments/assets/fb9d786f-41da-4a24-8391-c5eb248ab7df)
+![image](https://github.com/user-attachments/assets/1e05e53c-b8bc-4cd5-8a1b-d8588630f6e4)
 
 ---
 
